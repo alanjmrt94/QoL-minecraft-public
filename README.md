@@ -432,15 +432,17 @@ Download the JAR that matches your loader (`*-forge`, `*-fabric`, or `*-neoforge
 
 See [LICENSE.md](LICENSE.md).
 
-- Use and distribute freely (including on servers), **with authorship credit** to **alanjmrt94**
-- Derivatives must keep credit to the original author
-- **Commercial sale is not allowed**
+- Use on clients/servers with authorship credit to **alanjmrt94**
+- Unmodified redistribution (e.g. modpacks) OK with license + credit
+- **No modifications / derivatives**
+- **No commercial sale**
 
 ## Links
 
 - Docs & changelog: [github.com/alanjmrt94/QoL-minecraft-public](https://github.com/alanjmrt94/QoL-minecraft-public)
 - Discord: [discord.gg/CcUNTJjPD](https://discord.gg/CcUNTJjPD)
-- CurseForge: pending first upload
+- Modrinth: [modrinth.com/mod/quality-of-life-minecraft](https://modrinth.com/mod/quality-of-life-minecraft)
+- CurseForge: [curseforge.com/.../quality-of-life-for-minecraft](https://www.curseforge.com/minecraft/mc-mods/quality-of-life-for-minecraft)
 - Changelog: [changelog.txt](changelog.txt)
 
 Development source is a **closed private project** ([QoL-minecraft](https://github.com/alanjmrt94/QoL-minecraft)). Public README and release notes live in [QoL-minecraft-public](https://github.com/alanjmrt94/QoL-minecraft-public).

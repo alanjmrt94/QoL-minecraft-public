@@ -1,4 +1,4 @@
-# QoL Author License (No Sale)
+# QoL Author License (No Sale, No Derivatives)
 
 Copyright (c) 2026 alanjmrt94
 
@@ -9,22 +9,21 @@ Author: **alanjmrt94**
 
 You may:
 
-1. **Use** this software privately and on Minecraft servers (public or private).
-2. **Distribute** unmodified copies of the software, including in modpacks, provided that:
-   - this license text is included, and
+1. **Use** this software privately and on Minecraft servers (public or private), with authorship credit to **alanjmrt94**.
+2. **Distribute** unmodified copies of the software (including in modpacks), provided that:
+   - this license text is included unchanged, and
    - authorship credit to **alanjmrt94** is preserved and visibly attributed.
-3. **Modify** the software for personal or community use, provided that:
-   - the original authorship of **alanjmrt94** remains clearly credited,
-   - this license (or an equivalent notice of the same terms) accompanies the derivative,
-   - the derivative does not claim sole authorship of the original work.
 
 ## Restrictions
 
 You may **not**:
 
-1. **Sell** this software, any substantial portion of it, or access to it as a paid product (including paid exclusive redistribution).
-2. Remove or obscure authorship, copyright, or license notices.
-3. Redistribute under terms that conflict with this license.
+1. **Modify**, reverse-engineer for redistribution, fork, or create derivative works based on this software (including redistributing altered builds or source as your own).
+2. **Sell** this software, any substantial portion of it, or access to it as a paid product (including paid exclusive redistribution).
+3. Remove or obscure authorship, copyright, or license notices.
+4. Redistribute under terms that conflict with this license.
+
+Official downloads: CurseForge, Modrinth, and channels designated by the author.
 
 ## Disclaimer
 
@@ -38,4 +37,5 @@ ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM USE OF THE SOFTWARE.
 Author: alanjmrt94  
 Project: Quality of Life for Minecraft  
 GitHub (public docs): https://github.com/alanjmrt94/QoL-minecraft-public  
-CurseForge: (pending first upload)
+CurseForge: https://www.curseforge.com/minecraft/mc-mods/quality-of-life-for-minecraft  
+Modrinth: https://modrinth.com/mod/quality-of-life-minecraft
