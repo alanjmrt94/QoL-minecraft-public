@@ -1,0 +1,116 @@
+1.20.1-0.6.0-alpha.1 (alpha)
+
+Water landscape dye + license/links polish. Alpha for Minecraft 1.20.1 (Forge, Fabric, NeoForge).
+Later ports planned: 1.21.1 (three loaders) and 26.1/26.2 (Fabric + NeoForge). Store pages not live yet.
+
+- Water Dye Diffuser: craft (iron + glass + bucket); fill with water (bucket, bottle, cauldron, or ocean/river); one dye color only (pink/lime/green/cyan/purple/magenta/red) up to 64 charges
+- Load dye on the placed block, with both hands, or by right-clicking dye onto the item in inventory; at 64 the canister seals (no more dye / no sneak-empty)
+- Paint: right-click water while holding a filled diffuser, or empty-hand use on a placed ready diffuser; sneak+empty removes a nearby stain
+- Persistent circular color overlay on lakes/oceans (vanilla water unchanged); radius scales linearly 2→16 with charges (1→64); vertical reach ±8; max 256 stains per dimension
+- Breakable by hand (~1 s); config toggle `water_landscape_dye`
+- License screen: QoL Author License, GitHub link, CurseForge coming soon; mod list homepage points to GitHub
+
+1.20.1-0.5.2 (unreleased)
+
+v3 backlog closure: distiller fuels, molten stone, seasoning NBT, bottles, cauldron enter/snow/ice cream, and fluid distillation. Configurable; see README.
+
+- Cooler polish: event-based fridge/freezer/reinforced sounds (no place/break noise; one play per multiblock open/close); Side by Side as a single 2×2 French-door body with glass shelves; freezer snow liner (translucent); redstone dust or block in freezer slots; double-freezer snow puff + soft cold overlay; freeze damage only after ~10 s GUI open with snow; vanilla-aligned player inventory on all cooler GUIs
+- Distiller fuels via `#qolminecraft:distiller_fuels` with QoL burn times (torch ≈½ coal, blaze ≈3 coals, stick ×2 vanilla, lava ×3 furnace)
+- Lava fuel leaves molten stone bucket; pouring places stone or rare iron/gold/diamond ore (`molten_stone_bucket`)
+- Torch / soul torch / blaze also fuel furnace and blast furnace with QoL times
+- Adjacent fluid distillation without bottles: salt cauldron or ocean water → fresh cauldron level + salt (needs fuel)
+- Distiller GUI atlas overlays: heater and liquid/condenser fill with progress; bottle tubes reveal top-down
+- Seasoning NBT `qol_seasoning=salt|sugar` + datapack tags; salt +25% hunger; sugar heals HP + short Speed; grain overlays (glint fallback)
+- All bottles placeable with Shift; stack size 32 (vanilla + QoL non-potion bottles)
+- Enter water/dyed cauldron: wet entities (`cauldron_enter_effects` / `cauldron_water_wets`); chickens stay trapped; parrots float
+- Snow block fills powder-snow cauldron; snowballs add levels; ice cream (milk + sugar + dye) and cone scoop (cookie-like nutrition, brief freeze)
+- Torch wet rules refined (wind/snow chances; default dry ~2 min); coffee grind turns default 4
+- Crank nozzle only when a hopper is attached; keeps the first coupling when multiple hoppers exist
+- README: Bedrock vs QoL cauldron differences table (EN/ES)
+- Fabric compile: pin GUI uses leftPos/topPos; freeze protect no longer needs Forge PersistentData
+- Opt-in tree fruit visuals (`tree_fruit_visuals`): hanging apple/orange telegraph on oak/dark oak/acacia leaves (client-only)
+
+1.20.1-0.4.1 (unreleased)
+
+Coffee crop, paper cups, slime glue, and Coffee Delight soft-compat. Configurable; see README.
+
+- Coffee bush on sand (plantable + wild patches); berries → beans → crank mill → grounds
+- Wild spawn via `#qolminecraft:spawns_wild_coffee` (Forge/NeoForge biome_modifier + Fabric BiomeModifications); Fabric skips QoL wild gen if Coffee Delight is loaded
+- Slime glue (slime + water bucket → 2; placeable block) and paper cup (2 paper + glue)
+- Coffee / coffee with milk in bowl or paper cup; dedicated cup textures
+- Serve from jar (hand or placed) into empty bowl/cup; drink coffee directly from the jar
+- Soft-compat Coffee Delight: shared tags/mill inputs; 1:1 conversions; QoL beans smelt/smoke to CD roasted; QoL grounds craft CD black cup/mug (+ Mr. Clever); FD cutting board for QoL berries when FD+CD present
+
+1.20.1-0.4.0
+
+Coffee, chocolate, jars, crank mill, cooler multiblock, weather & movement, plus v2 feature closure (spoilage stages, pins, notepad, ghost, animals, torches). Configurable; see README.
+
+- Crank: hold-to-grind with progress actionbar, particles/sound, ANGLE model, redstone pulse; place on top or any side of hopper; force-push ground products to adjacent chests; orange press (orange + bottle → juice)
+- Mill extras: wheat → flour (bread / cookies); bone → bone meal ×3; cobble → gravel; flour_enabled / mill_extras_enabled / orange_enabled
+- Coffee bowls: grounds + fresh water + bowl; −10% hunger, high sat, long Speed; heat 3 min (steam); sugar boost
+- Coffee with milk: craft / milk bucket / jar / placed jar; −20% hunger, short Speed, +1 HP, clears poison
+- Chocolate chain: cocoa powder, butter, chocolate bar, hot chocolate & chocolate milk bowls; freeze protect 3 min when hot
+- Placed jar BE with servings; GlassJar fill/drink/serve for coffee/chocolate/juice/water
+- Distiller alembic model (copper/glass), LIT light + particles; GUI fuel / salt-in / empty→fresh / salt out
+- Dirty water / wet mud: one puddle per cell; wet mud replaces dirty water
+- Fridge/freezer multiblock: reinforced vertical (54 slots), Side by Side 2×2, H+F combo; freezer 8+8 snow unlock; outward doors, hollow interior, double horiz lid; face/side/back textures; foam vs metallic sounds; interior light + shelf item render
+- Campfire sleep bonus: +1 heart with lit campfire nearby (2 HP → 4 HP default)
+- Campfire rain extinguish: 25% rain / 80% thunder; roof with 2 air gaps → 0% / 10% (`campfire_rain_extinguish`)
+- Outdoor torches: rain/storm/water → wet; dry → unlit; auto-relight (faster near campfire); sand/gravel crush → unlit drop; wet item entities in water; +10% wind or snow (`wet_torches`)
+- Movement hunger: +5% jump or sprint, +10% combined (`movement_hunger`)
+- Food spoilage: fresh → stale → rotten flesh; tooltip remaining time; `#qolminecraft:never_spoils`; fridge/freezer rates
+- Animal sleep: datapack tags diurnal/nocturnal; wake on damage, rain, or nearby player (config)
+- Oranges: juice clears poison + short resistance; −10% drowned damage in water (all loaders); acacia leaf drops
+- Pinned hotbar: key P; double-tap drop confirm; quick-move skip; pin icon in GUI; NBT persistence
+- Ghost block: placement preview (slabs/stairs orientation); key G toggle; default off
+- Notepad: Shift+use or book UI buttons insert day/nick/XYZ/biome; pencil durability on write; pen refill with ink sac; `#qolminecraft:iron_nuggets` recipe tag
+- Config toggles: coffee_enabled, chocolate_enabled, jars_enabled, flour_enabled, mill_extras_enabled, animal_sleep_wake_*, ghost_block, etc.
+
+1.20.1-0.3.0
+
+Cauldron expansion (configurable; see README).
+
+- Lava cauldron: configurable light + burn/damage while standing inside
+- Powder snow cauldron: freeze while standing inside (stronger at higher levels)
+- Comparator signal by contents (empty 0; water/dyed/snow 1–3; lava 3; dyed+fish level+1)
+- Fish in cauldron (tropical/puffer; Shift+empty hand to remove; puffer poisons)
+- Cook in cauldron: heat below + raw food → cooked (1 water level); stored fish + heat cooks the fish
+- Dirty potatoes: 5% harvest chance; eating restores less; wash → clean potato + brown water levels 1–3 → wet mud / muddy cauldron
+- Wet mud & mud bottle: composter; furnace → vanilla mud; dirt hole → dirt; floor → mud puddle (slip/slow; persists in rain; thunder accentuates)
+- Extended vanilla mud: ice-like slip + slowdown; stand still to sink ~⅓ block (faster in rain/thunder)
+- Weather: rain can turn exposed dirt into mud; clear weather dries mud back to dirt (skips swamp/mangrove); `mud_world_effects` toggle
+- Sponge on dyed cauldron clears dye/glow without emptying water level
+- Distiller: fuel slots (salt bottle → salt + fresh); sneak opens manual
+- Salt block; salted baked potato / bread (+25% hunger); season other cooked food (slower spoilage)
+
+1.20.1-0.2.0
+
+v2 feature set (configurable; see README).
+
+- Campfire sleep bonus (+10% heal)
+- Wet/unlit torches (rain/water, dry, flint and steel relight)
+- Cauldron dyeing (dyes, ink, glow ink light; water levels 1–3; leather armor incl. pants; glowing beds)
+- Colored water bottles from dyed cauldrons (−½ heart on drink, 20% random effect; clear glow water)
+- Dirty water bucket/bottle; temporary murky puddle; pour bottles back into cauldrons; dirty bottle composts
+- Fresh vs salt water bottles; simple cauldron distillation; distiller block
+- Cooked food spoilage; fridge (slow) and freezer (pause)
+- Coffee beans/grounds/drink; crank + hopper grinding; brown dye from grounds
+- Oranges and orange juice (poison clear, short resistance)
+- Glass jars; insulation sheet recipes
+- Animal sleep (diurnal/nocturnal, zzz particles)
+- Pinned hotbar slots (P) with double-tap drop confirm
+- Ghost block placement preview
+- Pencil, pen, notepad (kept on death; Shift+use inserts day/nick/coords)
+- Shared game/ layer for Forge, Fabric, and NeoForge
+
+1.20.1-0.1.0
+
+First public scaffold of Quality of Life for Minecraft (alanjmrt94's third Minecraft mod).
+
+- Multi-loader support: Forge, Fabric, and NeoForge on Minecraft 1.20.1
+- In-game config menu (Mods → Config / Mod Menu / creative QoL Config Tablet) with tooltips on every option
+- Feature: Heal on sleep — configurable hearts healed when waking from a bed (default 1 heart / 2 HP; 0 = off)
+- Samples for upcoming work: sample block, dirt loot tweak, texture-fix stub
+- Optional exception analytics: local log file; online reporting only after accepting the author license
+- Commands: /qol sample, /qol analytics status|test|clear, /qol config
+- Custom author license (use/distribute with credit; no commercial sale)
