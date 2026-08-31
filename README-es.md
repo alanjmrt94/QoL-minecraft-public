@@ -12,7 +12,7 @@ Mejoras pequeñas y prácticas para el día a día en Minecraft — **Forge**, *
 **Versión actual:** `1.20.1-0.6.0-alpha.1` (**alpha**) · Minecraft **1.20.1** · Cliente y servidor dedicado  
 
 > Notas de versión: [changelog.txt](changelog.txt) (**siempre en inglés**) · notas anteriores aún listadas: `1.20.1-0.5.2` / `1.20.1-0.4.1`  
-> Este alpha sale en **1.20.1** (Forge / Fabric / NeoForge). Ports a **1.21.1** (tres loaders) y **26.1 / 26.2** (Fabric + NeoForge) están planificados.
+> El alpha de tiendas sale en **1.20.1** (Forge / Fabric / NeoForge). Los ports **1.21.1** (Forge / Fabric / NeoForge) y **26.1 / 26.2** (Fabric + NeoForge) ya compilan en el árbol como módulos sin publicar (aún no en Modrinth/CurseForge).
 
 ---
 
@@ -421,9 +421,9 @@ Mano principal + secundaria (`F`). Clic derecho en el aire o en un bloque que no
 
 | | |
 |---|---|
-| Minecraft | **1.20.1** (este alpha) · **1.21.1** planificado · **26.1 / 26.2** planificado |
+| Minecraft | **1.20.1** (alpha en tiendas) · **1.21.1** sin publicar · **26.1 / 26.2** sin publicar |
 | Loaders | **1.20.1 / 1.21.1:** Forge · Fabric · NeoForge · **26.x:** solo Fabric · NeoForge |
-| Java | **17+** en 1.20.1 · **21+** en 1.21 · **25+** esperado en 26.x |
+| Java | **17+** en 1.20.1 · **21+** en 1.21.1 · **25+** en 26.x |
 | Lados | Cliente y/o servidor dedicado |
 
 Descargá el JAR de tu loader (`*-forge`, `*-fabric` o `*-neoforge`). No mezcles loaders.
