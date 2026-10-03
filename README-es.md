@@ -1,28 +1,34 @@
 <p align="center">
-  <img src="assets/icon.png" alt="Quality of Life for Minecraft" width="192" height="192" />
+  <img src="assets/icon.png" alt="Creative Quality Of Life" width="192" height="192" />
 </p>
 
-# QoL Mejoras de Calidad de Vida para Minecraft
+# Creative Quality Of Life
 
-<small><a href="README.md"><img src="https://flagcdn.com/w20/us.png" width="20" alt="Read in English" /> Read in English</a></small>
+<small>por [alanjmrt94](https://github.com/alanjmrt94) · <a href="README.md"><img src="https://flagcdn.com/w20/us.png" width="20" alt="Read in English" /> Read in English</a></small>
 
-Mejoras pequeñas y prácticas para el día a día en Minecraft — **Forge**, **Fabric** y **NeoForge**.
+Un kit práctico de comodidades de supervivencia para el día a día en Minecraft — **Forge**, **Fabric** y **NeoForge**.
 
-**Este es mi tercer mod de Minecraft, creado por [alanjmrt94](https://github.com/alanjmrt94).**  
+**Este es mi tercer mod de Minecraft.**  
 **Versión actual:** `1.20.1-0.6.0-alpha.1` (**alpha**) · Minecraft **1.20.1** · Cliente y servidor dedicado  
 
 > Notas de versión: [changelog.txt](changelog.txt) (**siempre en inglés**) · notas anteriores aún listadas: `1.20.1-0.5.2` / `1.20.1-0.4.1`  
-> El alpha de tiendas sale en **1.20.1** (Forge / Fabric / NeoForge). Los ports **1.21.1** (Forge / Fabric / NeoForge) y **26.1 / 26.2** (Fabric + NeoForge) ya compilan en el árbol como módulos sin publicar (aún no en Modrinth/CurseForge).
+> Listing en tiendas: **Creative Quality Of Life** (`creative-qol`). La matriz cubre **1.20.1**, **1.21.1** y **26.1 / 26.2**.
 
 ---
 
 ## ¿Qué es?
 
-**Quality of Life for Minecraft** añade comodidades configurables para que supervivencia y creativo se sientan más fluidos — sin convertirse en un pack enorme.
+**Creative Quality Of Life** es un kit de supervivencia práctica: no inventa un universo nuevo, sino que llena huecos del día a día — cocinar, guardar comida, tomar agua, dormir, iluminar y organizar el inventario — con reglas que se sienten naturales y se pueden apagar una por una.
 
-Todo se configura desde un **menú in-game** (Mods → Config / Mod Menu, o la **Tableta de config QoL** en creativo). Al pasar el mouse por cada opción aparece un tooltip.
+En el centro está el **agua y los calderos**: teñís el agua y la usás en lana, camas, concreto o cuero; embotellás agua fresca o salada; destilás con un alambique; cocinás con fuego abajo; guardás peces; hacés helado con nieve; o limpiás tinte con una esponja. El agua sucia, el barro y las papas sucias también entran en esa misma lógica.
 
-Los párrafos debajo de **Ver detalles** son opcionales: números de balance, claves de config y reglas finas.
+Alrededor de la comida hay una cadena completa: **la comida cocida se echa a perder** si no la cuidás; la **heladera**, la **heladera reforzada** y el **freezer** (incluso en combinación side-by-side) ralentizan o pausan ese proceso. Molés con **manivela + hopper** café, cacao, harina, jugo de naranja… Preparás **café** (arbusto, tazas, con leche), **chocolate caliente** y **frascos** para servir varias porciones.
+
+También podés **pintar lagos y océanos** con el Bidón de tinta de agua (el agua vanilla sigue siendo vanilla; solo cambia el color del paisaje). Las antorchas se mojan con el clima; dormir cerca de una fogata cura un poco más; los animales pueden dormir; fijás slots de la hotbar; anotá día, coords y bioma en un bloc sin perder el libro al morir.
+
+Todo pasa por un **menú in-game** (Mods → Config / Mod Menu, o la Tableta QoL en creativo), con tooltip en cada opción. No es un kitchen-sink infinito: son comodidades concretas, activables, pensadas para que la supervivencia se sienta más viva y menos tediosa.
+
+Los apartados **Ver detalles** abajo son opcionales (números, claves de config y reglas finas).
 
 ## Funciones (v0.6.0-alpha)
 
@@ -441,8 +447,8 @@ Ver [LICENSE.md](LICENSE.md).
 
 - Docs y changelog: [github.com/alanjmrt94/QoL-minecraft-public](https://github.com/alanjmrt94/QoL-minecraft-public)
 - Discord: [discord.gg/CcUNTJjPD](https://discord.gg/CcUNTJjPD)
-- Modrinth: [modrinth.com/mod/quality-of-life-minecraft](https://modrinth.com/mod/quality-of-life-minecraft)
-- CurseForge: [curseforge.com/.../quality-of-life-for-minecraft](https://www.curseforge.com/minecraft/mc-mods/quality-of-life-for-minecraft)
+- Modrinth: [modrinth.com/mod/creative-qol](https://modrinth.com/mod/creative-qol)
+- CurseForge: [curseforge.com/.../creative-qol](https://www.curseforge.com/minecraft/mc-mods/creative-qol)
 - Changelog: [changelog.txt](changelog.txt)
 
 El código de desarrollo es un **proyecto privado cerrado** ([QoL-minecraft](https://github.com/alanjmrt94/QoL-minecraft)). El README y las notas de versión públicas viven en [QoL-minecraft-public](https://github.com/alanjmrt94/QoL-minecraft-public).

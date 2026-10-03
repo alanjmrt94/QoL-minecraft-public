@@ -8,7 +8,7 @@ Unreleased in-tree ports now compile: 1.21.1 (Forge / Fabric / NeoForge) and 26.
 - Paint: right-click water while holding a filled diffuser, or empty-hand use on a placed ready diffuser; sneak+empty removes a nearby stain
 - Persistent circular color overlay on lakes/oceans (vanilla water unchanged); radius scales linearly 2→16 with charges (1→64); vertical reach ±8; max 256 stains per dimension
 - Breakable by hand (~1 s); config toggle `water_landscape_dye`
-- License screen: QoL Author License, GitHub link, CurseForge coming soon; mod list homepage points to GitHub
+- License screen: QoL Author License, GitHub link; mod list homepage points to GitHub; alpha on Modrinth and CurseForge
 
 1.20.1-0.5.2 (unreleased)
 

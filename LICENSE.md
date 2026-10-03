@@ -37,5 +37,5 @@ ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM USE OF THE SOFTWARE.
 Author: alanjmrt94  
 Project: Quality of Life for Minecraft  
 GitHub (public docs): https://github.com/alanjmrt94/QoL-minecraft-public  
-CurseForge: https://www.curseforge.com/minecraft/mc-mods/quality-of-life-for-minecraft  
-Modrinth: https://modrinth.com/mod/quality-of-life-minecraft
+CurseForge: https://www.curseforge.com/minecraft/mc-mods/creative-qol  
+Modrinth: https://modrinth.com/mod/creative-qol
