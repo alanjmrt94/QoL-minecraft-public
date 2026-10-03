@@ -1,7 +1,7 @@
 1.20.1-0.6.0-alpha.1 (alpha)
 
 Water landscape dye + license/links polish. Store alpha for Minecraft 1.20.1 (Forge, Fabric, NeoForge).
-Unreleased in-tree ports now compile: 1.21.1 (Forge / Fabric / NeoForge) and 26.1 / 26.2 (Fabric + NeoForge). Not on Modrinth/CurseForge yet.
+Ports on the same stores: 1.21.1 (Forge / Fabric / NeoForge) and 26.1 / 26.2 (Fabric + NeoForge).
 
 - Water Dye Diffuser: craft (iron + glass + bucket); fill with water (bucket, bottle, cauldron, or ocean/river); one dye color only (pink/lime/green/cyan/purple/magenta/red) up to 64 charges
 - Load dye on the placed block, with both hands, or by right-clicking dye onto the item in inventory; at 64 the canister seals (no more dye / no sneak-empty)
