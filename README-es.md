@@ -417,7 +417,7 @@ Mano principal + secundaria (`F`). Clic derecho en el aire o en un bloque que no
 
 ## Cómo configurar
 
-1. **In-game:** Opciones → Mods → **Quality of Life for Minecraft** → Config  
+1. **In-game:** Opciones → Mods → **Creative Quality Of Life** → Config  
    - Fabric: **Mod Menu** si lo tenés  
    - O la **Tableta de config QoL** en creativo  
 2. **Archivo:** `config/qolminecraft-common.toml`  

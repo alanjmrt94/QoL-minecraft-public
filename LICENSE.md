@@ -2,7 +2,7 @@
 
 Copyright (c) 2026 alanjmrt94
 
-Software: **Quality of Life for Minecraft** (`qolminecraft`)  
+Software: **Creative Quality Of Life** (`qolminecraft`)  
 Author: **alanjmrt94**
 
 ## Permissions
@@ -35,7 +35,7 @@ ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM USE OF THE SOFTWARE.
 ## Contact
 
 Author: alanjmrt94  
-Project: Quality of Life for Minecraft  
+Project: Creative Quality Of Life  
 GitHub (public docs): https://github.com/alanjmrt94/QoL-minecraft-public  
 CurseForge: https://www.curseforge.com/minecraft/mc-mods/creative-qol  
 Modrinth: https://modrinth.com/mod/creative-qol

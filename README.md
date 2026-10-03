@@ -417,7 +417,7 @@ Main hand + offhand (`F`). Right-click in air or on a block that does not consum
 
 ## How to configure
 
-1. **In-game:** Options → Mods → **Quality of Life for Minecraft** → Config  
+1. **In-game:** Options → Mods → **Creative Quality Of Life** → Config  
    - Fabric: **Mod Menu** if installed  
    - Or the creative **QoL Config Tablet**  
 2. **File:** `config/qolminecraft-common.toml`  
