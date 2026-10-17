@@ -1,3 +1,16 @@
+1.20.1-0.6.0-alpha.2 (alpha)
+
+Cauldron lid, jar pour/serve, snow preserve, dog bath, and torch/sleep polish. Store alpha for Minecraft 1.20.1 (Forge, Fabric, NeoForge).
+Ports on the same stores: 1.21.1 (Forge / Fabric / NeoForge) and 26.1 / 26.2 (Fabric + NeoForge).
+
+- Cauldron lid (`cauldron_lid`): craft, heat cook with 4 slots, comparator output, hoppers off while covered
+- Placed jar GUI: pour/serve fluids; item tint follows fluid
+- Snow cauldron: preserve food + config for fill rate and drops; dog bath in dyed cauldron
+- Wet torches: player-placed only; soul/lantern config; sleep FX near campfire
+- `features.distiller_fluid_io`; keybind category → Creative Quality Of Life
+- Repo layout: loaders under `platforms/{mc}`; portable NeoForge launch paths and JAVA_HOME example
+- Includes prior alpha.1 water-dye pack — see below
+
 1.20.1-0.6.0-alpha.1 (alpha)
 
 Water landscape dye + license/links polish. Store alpha for Minecraft 1.20.1 (Forge, Fabric, NeoForge).
