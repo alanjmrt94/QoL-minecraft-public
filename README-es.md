@@ -9,7 +9,7 @@
 Un kit práctico de comodidades de supervivencia para el día a día en Minecraft — **Forge**, **Fabric** y **NeoForge**.
 
 **Este es mi tercer mod de Minecraft.**  
-**Versión actual:** `1.20.1-0.6.0-alpha.1` (**alpha**) · Minecraft **1.20.1** · Cliente y servidor dedicado  
+**Versión actual:** `1.20.1-0.6.0-alpha.2` (**alpha**) · Minecraft **1.20.1** · Cliente y servidor dedicado  
 
 > Notas de versión: [changelog.txt](changelog.txt) (**siempre en inglés**) · notas anteriores aún listadas: `1.20.1-0.5.2` / `1.20.1-0.4.1`  
 > Listing en tiendas: **Creative Quality Of Life** (`creative-qol`). La matriz cubre **1.20.1**, **1.21.1** y **26.1 / 26.2**.
@@ -433,6 +433,16 @@ Mano principal + secundaria (`F`). Clic derecho en el aire o en un bloque que no
 | Lados | Cliente y/o servidor dedicado |
 
 Descargá el JAR de tu loader (`*-forge`, `*-fabric` o `*-neoforge`). No mezcles loaders.
+
+## Contribuidores
+
+Colaboradores del desarrollo (lista en construcción):
+
+<!-- Formato: - Nombre ([@usuario](https://github.com/usuario)) — rol opcional -->
+
+- Franco Lens ([@eelColo](https://github.com/eelColo))
+
+Guías internas paso a paso (repo privado): [docs/](docs/README.md).
 
 ## Licencia
 

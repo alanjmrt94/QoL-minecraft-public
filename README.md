@@ -9,7 +9,7 @@
 A practical survival comfort kit for everyday Minecraft — **Forge**, **Fabric**, and **NeoForge**.
 
 **This is my third Minecraft mod.**  
-**Current version:** `1.20.1-0.6.0-alpha.1` (**alpha**) · Minecraft **1.20.1** · Client & dedicated server  
+**Current version:** `1.20.1-0.6.0-alpha.2` (**alpha**) · Minecraft **1.20.1** · Client & dedicated server  
 
 > Release notes: [changelog.txt](changelog.txt) (always in English) · earlier notes still listed: `1.20.1-0.5.2` / `1.20.1-0.4.1`  
 > Store listing: **Creative Quality Of Life** (`creative-qol`). Matrix builds cover **1.20.1**, **1.21.1**, and **26.1 / 26.2**.
@@ -433,6 +433,16 @@ Main hand + offhand (`F`). Right-click in air or on a block that does not consum
 | Sides | Client and/or dedicated server |
 
 Download the JAR that matches your loader (`*-forge`, `*-fabric`, or `*-neoforge`). Do not mix loaders.
+
+## Contributors
+
+Development collaborators (list under construction):
+
+<!-- Format: - Name ([@user](https://github.com/user)) — optional role -->
+
+- Franco Lens ([@eelColo](https://github.com/eelColo))
+
+Internal step-by-step guides (private repo): [docs/](docs/README.md) (Spanish).
 
 ## License
 
