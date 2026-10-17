@@ -15,7 +15,7 @@
 2. Prefer small, focused commits (English Conventional Commits: `feat`, `fix`, `docs`, …).
 3. Do not commit secrets: `scripts/.release.local`, keystores, `.env`, tokens, or real Discord webhooks.
 4. Store / Discord publishing is discretionary for the team. Scripts may be visible, but uploads are gated (`QOL_ALLOW_STORE_PUBLISH`, etc.). Prefer not to publish without agreement unless the owner has given you that latitude.
-5. **Pre-commit (Husky):** run `npm install` once after clone. Each commit runs mixin signature checks then Spotless (`scripts/pre-commit.sh`). Bypass only if needed: `QOL_SKIP_HOOKS=1`. See [`.cursor/TESTING.md`](.cursor/TESTING.md).
+5. **Pre-commit (Husky):** run `npm install` once after clone. Commits that stage `.java` run cliffs, mixin signature checks, then Spotless (`scripts/pre-commit.sh`); other commits only check `.tmp/` hygiene. Bypass only if needed: `QOL_SKIP_HOOKS=1`. See [`.cursor/TESTING.md`](.cursor/TESTING.md).
 
 ## Community
 
