@@ -22,7 +22,7 @@ A practical survival comfort kit for everyday Minecraft — **Forge**, **Fabric*
 
 At the center are **water and cauldrons**: dye the water and use it on wool, beds, concrete, or leather; bottle fresh or salt water; distill with an alembic; cook with heat below; keep fish; make ice cream with snow; or clear dye with a sponge. Dirty water, mud, and dirty potatoes share that same logic.
 
-Around food there is a full chain: **cooked food spoils** if you do not store it well; the **fridge**, **reinforced fridge**, and **freezer** (including side-by-side combos) slow or pause that process. Grind with a **crank + hopper** — coffee, cocoa, flour, orange juice… Brew **coffee** (bush, cups, with milk), **hot chocolate**, and serve from **jars**.
+Around food there is a full chain: **cooked food spoils** if you do not store it well; the **fridge**, **reinforced fridge**, and **freezer** (including side-by-side combos) slow or pause that process. Grind with a **crank + hopper** — coffee, cocoa, flour, orange juice… Brew **coffee** (bush, cups, brewing-stand coffee maker, with milk), **hot chocolate**, and serve from **jars**.
 
 You can also **tint lakes and oceans** with the Water Dye Diffuser (vanilla water stays vanilla; only the landscape color changes). Torches get wet in weather; sleeping near a campfire heals a little more; animals can sleep; pin hotbar slots; jot down day, coords, and biome in a notepad without losing the book on death.
 
@@ -43,6 +43,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   **Load dye:** on the placed block, both hands (water + dye), or right-click dye onto the diffuser item in inventory. At **64** it **seals** (no more dye; sneak-empty blocked).  
   **Paint:** right-click water while holding a ready diffuser, or empty-hand use on a placed ready diffuser. **Sneak + empty hand** removes a nearby stain.  
   **Radius:** circular disc, linear **2** (1 dye) → **16** (64 dyes); vertical ±8. Persists in world data (max **256** stains/dimension). Breakable by hand (~1 s).  
+  **Item data:** filled canisters store block-entity state on the stack. On **1.21.1+** that component must include the block-entity `id` (otherwise creative inventory sync can kick with `Missing id for entity`).  
   Config: `water_landscape_dye`.
 
   </details>
@@ -65,11 +66,11 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
 
   </details>
 
-- **Campfire rain** — Lit campfires can go out in rain or storms; a roof helps.
+- **Campfire rain** — Lit campfires can go out in rain or storms; alcoves and chimneys help.
   <details>
   <summary>See details</summary>
 
-  **25%** rain / **80%** thunder. Roof with **2 air blocks** between fire and ceiling → **0%** rain / **10%** thunder. Includes soul campfires. Config: `campfire_rain_extinguish`.
+  Base chance already **−25%** vs early design (~**18.8%** rain / ~**60%** thunder when exposed). **≥2 open faces** (N/S/E/W/down) → ×**1.25**. **≤1 open face** (fireplace alcove) → ×**0.5**. Alcove + **closed trapdoor** (directly above, or up to **16** blocks via a continuous chimney stack) → **immune**. Roof with **2 air blocks** between fire and ceiling → **0%** rain / ~**7.5%** thunder. Includes soul campfires. Config: `campfire_rain_extinguish`.
 
   </details>
 
@@ -99,7 +100,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  Intensity **1–3** (black ink included). Dye wool, beds, concrete/powder, and **full leather** (helmet, chestplate, leggings, boots). Concrete drains water (intensity 1 lasts least). Levels 1–3 visible. A **water bucket** sets level 3 and **dilutes** intensity gradually (does not hard-reset color).
+  Intensity **1–3** (black ink included). Dye wool, beds, concrete/powder, and **full leather** (helmet, chestplate, leggings, boots). On **1.21.1 / 26.1 / 26.2**, the same dyed-cauldron path also tints vanilla **leather horse armor** and **wolf armor** (`#minecraft:dyeable` / `#minecraft:cauldron_can_remove_dye`). Wolf armor is **vanilla** (Java ≥1.20.5); it is **not** available on **1.20.1** (backfill planned outside QoL). Concrete drains water (intensity 1 lasts least). Levels 1–3 visible. A **water bucket** sets level 3 and **dilutes** intensity gradually (does not hard-reset color).
 
   </details>
 
@@ -107,7 +108,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  Item `colored_water_bottle` (potion look). Drink: −½ heart and 20% random effect. Glow adds a **glint**. **Shift+right-click** places up to **32** bottles per block (vanilla + QoL).
+  Item `colored_water_bottle` (potion look). Drink: −½ heart and 20% random effect. Glow adds a **glint**. **Shift+right-click** places up to **32** bottles per block (vanilla + QoL). Config `features.placed_bottles_3d` (default on) uses 3D décor models; off = flat sprites.
 
   </details>
 
@@ -149,7 +150,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  GUI: fuel, salt water on top, 3 empty bottles → fresh + salt. Progress overlays (heater, liquid, tubes). Recipe: copper + glass + iron + bottle. Sneak opens the manual. Fuels `#qolminecraft:distiller_fuels` (torch ≈½ coal, blaze ≈3, stick ×2, lava ×3 furnace). Lava leaves a **molten stone bucket** (pour: stone or rare ore). Torch/blaze also fuel furnaces/blast furnaces. Adjacent ocean/salt cauldron → fresh cauldron + salt (needs fuel).
+  GUI: fuel, salt water on top, 3 empty bottles → fresh + salt, coolant (snow/ice) on the right. Progress overlays (heater, liquid, tubes); inventory label cleared of bottle slots. World BER shows items + liquid tint (1.20.1–26.x). Recipe: copper + glass + iron + bottle. Sneak opens the on-screen manual; crafting the distiller also gives a vanilla **written book** guide (creative Functional tab too). Fuels `#qolminecraft:distiller_fuels` (torch ≈½ coal, blaze ≈3, stick ×2, lava ×3 furnace). Lava leaves a **molten stone bucket** (pour: stone or rare ore). Torch/blaze also fuel furnaces/blast furnaces. Adjacent ocean/salt cauldron → fresh cauldron + salt (needs fuel).
 
   </details>
 
@@ -247,7 +248,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  Upgrade with iron or craft from scratch. **2 vertical** = 54 slots; **2×2 French-door Side by Side** (one body, glass shelves, redstone slot for interior light while open); **1 + freezer**. Spoilage ×0.15. Iron door/trapdoor-style sounds (one play per open/close). Wide GUI with centered player inventory.
+  Upgrade with iron or craft from scratch. **2 vertical** = 54 slots; **2×2 French-door Side by Side** (one body, glass shelves, redstone slot for interior light while open — dust or block; dust burns ~4× coal time, block never consumed); **1 + freezer** (combo works with the freezer above or below; open/close sounds follow the reinforced fridge; light snow mist when opening with snow+redstone). Spoilage ×0.15. Iron door/trapdoor-style sounds (one play per open/close). Wide GUI with Inventory-style labels and centered player inventory.
 
   </details>
 
@@ -255,7 +256,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  8 food + 8 snow (**16 snowballs** per sibling slot). Accepts **redstone dust or block** for snow-burst power (neighbor signal also works). Opening a charged double freezer puffs snow; soft cold overlay; freeze damage only after **~10 s** with the GUI open and snow loaded. Translucent snow liner interior. GUIs (single, double, combo) align player slots like a vanilla chest.
+  8 food + 8 snow (**16 snowballs** per sibling slot). Accepts **redstone dust** (consumed, ~6400 ticks) or a **redstone block** (never consumed) for snow-burst power (neighbor signal also works). Double freezer uses reinforced open/close sounds. Opening a charged double freezer puffs snow; soft cold overlay; freeze damage only after **~10 s** with the GUI open and snow loaded. Translucent snow liner interior. GUIs (single, double, combo): Inventory-style titles/labels (gap above slots), snow tint only on Snow, ghost redstone when the fuel slot is empty.
 
   </details>
 
@@ -279,11 +280,13 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
 
 #### Coffee
 
-- **Coffee crop & drinks** — Bush, paper cups, and soft-compat with Coffee Delight.
+- **Coffee crop & drinks** — Bush, paper cups, coffee maker multiblock, and soft-compat with Coffee Delight.
   <details>
   <summary>See details</summary>
 
   Bush on **sand**; wild berries in warm biomes (if Coffee Delight is present, Fabric skips duplicate worldgen). Berries → beans → grounds (also brown dye). **Slime glue** + **paper cup**. Bowl or cup coffee (−10% hunger, stamina, long Speed). Coffee with milk (−20% hunger, +1 HP, clears poison). Serve/drink from jar. Heat 3 min on fire/campfire/magma/lava. Sugar boosts effects. Soft-compat CD: tags, 1:1 conversions, roasting, CD black coffee crafts, cutting board.
+
+  **Coffee maker (multiblock):** place a **crank + hopper above** a vanilla brewing stand and a **coffee water tank** below. Mill grounds into the stand (up to 64); fill bottles/paper cups with fuel (blaze/coal/lava consume; redstone does not). Without the structure the stand stays vanilla potions. Shapeless craft remains a shortcut. Config: `coffee_brew_ticks`.
 
   </details>
 
@@ -317,7 +320,71 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
 
   </details>
 
+- **Name medals & collars** — Dye name tags in a cauldron, shape them on an anvil, then rename pets, villagers, golems, or (with consent) other players.
+  <details>
+  <summary>See details</summary>
+
+  Dye a name tag in a cauldron → anvil + shape ingredient (apple / book / soul torch / emerald / gold nugget / golden apple) → `name_medal`. Optional ribbon (`collar_ribbon`: leather + 2 string, dyeable) + medal on the anvil → `name_choker` (bicolor). Own pets / villagers / golems: rename UI + hanging medal/choker. Players: Yes/No request + 1‑minute cooldowns (`features.player_collars`). Collar name shows above the player nametag. Golem feeding (`features.golem_feeding`): iron / snow / copper (26.x). Config: `features.pet_name_medals`. Available on **1.20.1 / 1.21.1 / 26.1 / 26.2**.
+
+  </details>
+
 ### Inventory & building
+
+- **Chimney blocks** — Hollow flues (5 materials) that stack above a lit campfire so smoke exits at the top.
+  <details>
+  <summary>See details</summary>
+
+  Cobblestone, stone bricks, bricks, cobbled deepslate, mossy cobblestone. Auto-connect (shared wall opens); smoke path is **vertical only** (horizontal joins are visual only). Craft: **2×2** of the material → **4** chimneys. With an alcove (≤1 open face), a **closed** trapdoor just above—or up to **16** high on a continuous chimney column—keeps the campfire lit in rain. Available on **1.20.1 / 1.21.1 / 26.1 / 26.2**.
+
+  </details>
+
+- **Curtains** — Wall or ceiling décor (wrinkled / flat, 16 colors + sheer); click cycles closed → half → open.
+  <details>
+  <summary>See details</summary>
+
+  Craft: 2 wool + stick (wrinkled), 2 wool + string (flat); sheer = white wool + glass pane (+ string if flat). Place on a wall face (flush; slight gap on glass panes/iron bars) or on a ceiling underside (rod + cloth, stack up to **3**). Same color+style merge as pairs / 2×2 / ceiling column. No collision. Config: `features.curtains`. Available on **1.20.1 / 1.21.1 / 26.1 / 26.2**.
+
+  </details>
+
+- **Wall shelves & fruit basket** — Oak/acacia wall shelves with end brackets that merge in a row; floor fruit basket for stacking.
+  <details>
+  <summary>See details</summary>
+
+  Shelves attach to a sturdy wall face; place bottles/jars/vessels on the top surface. Basket: Shift+right-click fruit from tag `#qolminecraft:basket_fruit`; empty hand removes; breaking drops fruit + basket. Config: `features.wall_shelves`, `features.fruit_basket`. Recipes: 3 slabs + 2 sticks (shelf); sticks + wheat (basket). Available on **1.20.1 / 1.21.1 / 26.1 / 26.2** (26.x 3D décor uses item FIXED models for now; baked models on 1.20.1/1.21.1).
+
+  </details>
+
+- **Placed vessels** — Bowls, paper cups, and candles on flat surfaces (floor, sturdy top, carpet).
+  <details>
+  <summary>See details</summary>
+
+  Shift+right-click places up to **8** per block. Lit candles emit light; water extinguishes. Same 3D toggle as bottles (`features.placed_bottles_3d`). Carpet under a group is stashed and restored on break.
+
+  </details>
+
+- **Arrow quiver** — Cloth sack on your back holding up to **4** arrow types × **64** each; bow/crossbow pull from it.
+  <details>
+  <summary>See details</summary>
+
+  Craft: leather + string (`LSL` / `L L` / `LLL`). **Right-click** opens a 4-slot GUI. Key **V** cycles the active slot (HUD while drawing). Config: `features.quiver_enabled`, `quiver.prefer_hotbar` (loose hotbar arrows before quiver when on). Back layer shows a 3D sack; arrow tips stick out by fill (1 / 2 / 4 / 8). Available on **1.20.1 / 1.21.1 / 26.1 / 26.2**.
+
+  </details>
+
+- **Halloween ghost sheet & candy basket** — Offhand sheet costume with slow/float/jump; candy basket stays visible in hand.
+  <details>
+  <summary>See details</summary>
+
+  Sheet in **offhand** only: Slowness I + Slow Falling I + Jump Boost II; jump plays a distant “boo”. Most held items are hidden/blocked while wearing the sheet — the **candy basket** is the exception. Full-body sheet layer in third person. Available on **1.20.1 / 1.21.1 / 26.1 / 26.2**. **Ghostface** (mask, knife, suspense audio) ships in the separate mod **Halloween Trick or Treat** (`halloweentot`), not here.
+
+  </details>
+
+- **Horror wall writings** — Blood-style wall plaques; keys **F7 / F8 / F9** toggle movie / window / chest text.
+  <details>
+  <summary>See details</summary>
+
+  Place on a supporting wall. Client language picks the texture (`*_en` / `*_es`) so each player sees their own language. Available on **1.20.1 / 1.21.1 / 26.1 / 26.2**.
+
+  </details>
 
 - **Pinned hotbar slots** — Key **P**: lock a hotbar slot so you do not drop or move it by accident.
   <details>
@@ -341,7 +408,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  Pencil: sticks+flint. Pen: sticks+ink+`#qolminecraft:iron_nuggets` (+50% durability; refill with ink). Notepad: book + tool. Shift+use or book UI buttons. Writing tools lose durability on insert.
+  Pencil: sticks+flint. Pen: sticks+ink+`#qolminecraft:iron_nuggets` (+50% durability; refill with ink sac in the other hand). Notepad: book + pencil/pen. **Right-click** opens the writable-book editor (quick-insert buttons for day/time, nick, XYZ, biome). **Shift+right-click** inserts all four at once. Writing tools lose durability on insert. Kept on death when the feature is on.
 
   </details>
 
@@ -351,7 +418,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  Creative QoL tablet. Local/online analytics (online after license). Sample block/loot. Dev: `debug.creative_tab = true` → **QoL Debug** tab (restart).
+  Creative QoL tablet. Local/online analytics (online after license). Sample block/loot. Mod creative tab (`debug.creative_tab`, default on; restart after change).
 
   </details>
 
@@ -368,7 +435,7 @@ Java + this mod are **not** a 1:1 copy of Bedrock cauldrons. QoL keeps its own r
 | Strength | Mostly dyed or not | Intensity **1–3** + optional **glow** |
 | Bottle / bucket out | Usually plain water / empty bucket | **Colored bottle**; dirty bucket keeps tint |
 | Add water | Often strips dye hard | Dilutes gradually |
-| Leather / wool / beds / concrete | Leather focus | Full leather set + wool/beds/concrete |
+| Leather / wool / beds / concrete | Leather focus | Full leather set + wool/beds/concrete; **1.21.1/26.x** also horse + wolf armor via dyeable tags |
 | Potions in cauldron | Fill / tip arrows / etc. | **No** — not a brewing stand |
 | Tip arrows | Yes on Bedrock | **No** in this version |
 | QoL-only | — | Distiller, fresh/salt, mud, fish, cook, enter, snow, ice cream, lava |
@@ -404,6 +471,12 @@ Main hand + offhand (`F`). Right-click in air or on a block that does not consum
 | Ready Water Dye Diffuser (use on water) | — | Paints a circular stain; radius from charge count |
 | Empty hand on placed ready diffuser | — | Same paint |
 | Sneak + empty hand on diffuser / near stain | — | Empties diffuser (if not sealed) or removes nearby stain |
+| Bottle / bowl / cup / candle (Shift+use on flat surface) | — | Places `placed_bottles` / `placed_vessel` (up to stack limits) |
+| Basket fruit (Shift+use on `fruit_basket`) | — | Adds fruit; empty hand removes last |
+| Dyed name tag + shape item (anvil) | — | `name_medal` of that shape (1 XP) |
+| `name_medal` + `collar_ribbon` (anvil, either order) | — | `name_choker` (medal + ribbon colors) |
+| Medal / choker / name tag (use on eligible mob or player) | — | Rename UI / consent request; hanging visual if medal/choker |
+| Iron / snow / copper (use on damaged golem) | — | Heals golem (`features.golem_feeding`) |
 
 #### Inventory (cursor)
 
@@ -430,7 +503,7 @@ Main hand + offhand (`F`). Right-click in air or on a block that does not consum
 | Minecraft | **1.20.1** (store alpha) · **1.21.1** unreleased · **26.1 / 26.2** unreleased |
 | Loaders | **1.20.1 / 1.21.1:** Forge · Fabric · NeoForge · **26.x:** Fabric · NeoForge only |
 | Java | **17+** on 1.20.1 · **21+** on 1.21.1 · **25+** on 26.x |
-| Sides | Client and/or dedicated server |
+| Sides | Client and/or dedicated server (config UI / screens load only on the client) |
 
 Download the JAR that matches your loader (`*-forge`, `*-fabric`, or `*-neoforge`). Do not mix loaders.
 
