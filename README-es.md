@@ -108,7 +108,7 @@ Los apartados **Ver detalles** abajo son opcionales (números, claves de config 
   <details>
   <summary>Ver detalles</summary>
 
-  Ítem `colored_water_bottle` (aspecto de poción). Beber: −½ corazón y 20% efecto random. Con glow, **brilla**. **Shift+clic** coloca hasta **32** botellas por bloque (vainilla + QoL). Config `features.placed_bottles_3d` (default on): modelos 3D de decoración; off = sprites planos.
+  Ítem `colored_water_bottle` (aspecto de poción). Beber: −½ corazón y 20% efecto random. Con glow, **brilla**. **Shift+clic** coloca hasta **32** botellas por bloque (pociones/splash/lingering vainilla, miel, XP, ominous bottle en 1.21+, y botellas QoL). Stack de inventario **32** para esas. Config `features.placed_bottles_3d` (default on): modelos 3D de decoración; off = sprites planos. La ominous bottle en 3D es oscura y tiene los puntos rojos del ítem. En **1.21.1**, un **name tag** sobre una botella colocada abre la pantalla de nombre; el texto blanco se ve bajo la mira al apuntarla.
 
   </details>
 
@@ -176,7 +176,9 @@ Los apartados **Ver detalles** abajo son opcionales (números, claves de config 
   <details>
   <summary>Ver detalles</summary>
 
-  Congela según nivel (config). **Bloque de nieve** = lleno; **bolas** suman hasta 3 niveles. Helado: leche + azúcar + tinte → sabor; **cucurucho** (papel+azúcar) saca scoop (tipo galleta, freeze ~2 s).
+  Congela según nivel (config). **Bloque de nieve** = lleno; **bolas** suman hasta 3 niveles. Un caldero lleno da **6** cucuruchos (2 porciones por nivel visual). El cubo de nieve en polvo suena a nieve (colocar/romper), no al chapoteo del cubo de líquido. Helado: leche + azúcar + tinte, leche azucarada + tinte, o leche + azúcar teñida → sabor; **cucurucho** (papel en cono: 3 arriba, azúcar al medio, 1 de punta) saca bocha. Cada pasada suma una bocha (hasta 3). Una sola ralentiza un poco. Dos o tres, u otro helado mientras sigue el frío, congelan unos segundos y escarchan la skin. En 1.20.1 y 1.21.1 la nieve del caldero toma un pastel suave del sabor. Una bocha se llama por la comida, no por el tinte: vainilla, naranja, frambuesa, crema del cielo, limón, pistacho, cereza, tiramisú, sésamo, arándano, uva, ananá, dulce de leche, menta, frutilla, chocolate. Leche + azúcar craftea leche azucarada (botella y jar). Azúcar + tinte craftea un azúcar de color por tinte. Tinte + leche no hace nada. Leche + dos de azúcar + vainilla en polvo, calentadas en un caldero vacío, hacen dulce de leche. La vainilla sale de una flor en tierra: se cosecha la chaucha y se muele.
+
+  Huevera de 6 huecos (cuadrada en un bloque, angosta sobre una estantería) para cucuruchos, vasos y tazas de chocolate; las botellas no entran. Azúcar de color carga chispitas en un frasco (6, y 12 si repetís el color); ocho azúcares distintos en un balde hacen chispitas multicolor; el tinte suelto no entra. Clic derecho con el helado se las pasa a las bochas. Un recipiente que acepte el líquido del frasco lo llena con clic derecho y no abre pour/serve. Disco **Cones & Sprinkles** (Argentina y México: Conos y Chispas). Un freezer en marcha (nieve + redstone) zumba; con la puerta abierta más de 10 segundos salen humo y neblina de fogata. En **26.x** el caldero de nieve no toma el pastel.
 
   </details>
 
@@ -268,6 +270,22 @@ Los apartados **Ver detalles** abajo son opcionales (números, claves de config 
 
   </details>
 
+- **Jugo de manzana** — Botella (shapeless: manzana + botella de vidrio); se vuelca al frasco como el de naranja.
+  <details>
+  <summary>Ver detalles</summary>
+
+  Quita veneno y regeneración breve. Placeable en 3D (Shift). Stackea como las otras botellas QoL. También lo produce el **exprimidor** con manzanas vanilla.
+
+  </details>
+
+- **Exprimidor** — Prensa craftable para jugo de naranja/manzana en botellas, vasos o frascos.
+  <details>
+  <summary>Ver detalles</summary>
+
+  Craft (shapeless): tolva + manivela + pistón + gancho de hilo → exprimidor. Colocá el exprimidor; encima una **tolva mirando abajo** con **manivela** acoplada; en la GUI del exprimidor poné botellas, vasos de papel o frascos vacíos; frutas en la tolva; mantené la manivela. Cada giro completo llena **1** recipiente y lo eyecta hacia el `FACING` (boquilla). El atajo del molino (naranja + botella en la tolva) sigue disponible. Config: `features.juicer_enabled`.
+
+  </details>
+
 #### Manivela (molino)
 
 - **Manivela + tolva** — Mantené clic para moler; los productos salen al cofre.
@@ -306,7 +324,7 @@ Los apartados **Ver detalles** abajo son opcionales (números, claves de config 
   <details>
   <summary>Ver detalles</summary>
 
-  Hasta **4 porciones**. Llenar desde la otra mano (leche, café, chocolate, agua, jugo, cacao…). Beber leche limpia efectos. Shift+uso vacía. Shift+clic coloca frasco; cuenco vacío sirve. Config: `jars_enabled`.
+  Hasta **4 porciones**. Llenar desde la otra mano (leche, miel, café, chocolate, agua, slime, jugo de naranja/manzana, cacao…). Frasco vacío o lleno se coloca en 3D (Shift+clic). Beber leche limpia efectos. Shift+uso vacía. Cuenco vacío sirve desde el frasco colocado. En **1.21.1**, un **name tag** sobre el frasco colocado (suelo o estantería) abre la pantalla de nombre, deja una etiqueta blanca sin letras y muestra el nombre en blanco bajo la mira al apuntarlo. Nombre vacío quita la etiqueta y no gasta el tag; un nombre gasta un tag (en creativo no). Al recoger el frasco el nombre se conserva. Config: `jars_enabled`.
 
   </details>
 
@@ -317,6 +335,22 @@ Los apartados **Ver detalles** abajo son opcionales (números, claves de config 
   <summary>Ver detalles</summary>
 
   Tags `#qolminecraft:diurnal_sleepers` / `nocturnal_sleepers`. Despiertan con daño, lluvia o jugador cerca. Config de chance y radio.
+
+  </details>
+
+- **Domesticar un zorro** — Bayas dulces o brillantes pueden domesticar un zorro adulto.
+  <details>
+  <summary>Ver detalles</summary>
+
+  Más o menos una de cada tres. Te sigue; clic derecho lo sienta o lo levanta. Pollo o conejo (crudo o cocido) hace que durante 5 días no elija pollos ni conejos. Config: `features.tame_foxes`.
+
+  </details>
+
+- **Sentarse en escaleras** — Clic derecho en una escalera de abajo, sin un bloque en la mano.
+  <details>
+  <summary>Ver detalles</summary>
+
+  Si hay una valla, alfombra o losa delante, mirás hacia esa mesa. Agacharte para levantarte. Con un bloque en la mano lo colocás. Config: `features.sit_on_stairs`.
 
   </details>
 
@@ -350,7 +384,7 @@ Los apartados **Ver detalles** abajo son opcionales (números, claves de config 
   <details>
   <summary>Ver detalles</summary>
 
-  La estantería va en cara sturdy; encima podés colocar botellas/frascos/vajilla. Canasto: Shift+clic derecho con fruta del tag `#qolminecraft:basket_fruit`; mano vacía saca; al romper dropea fruta + canasto. Config: `features.wall_shelves`, `features.fruit_basket`. Recetas: 3 losas + 2 palos (estante); palos + trigo (canasto). En **1.20.1 / 1.21.1 / 26.1 / 26.2** (en 26.x el décor 3D usa modelos FIXED de ítem por ahora; baked models on 1.20.1/1.21.1).
+  La estantería va en cara sturdy; el tablero queda al ras del bloque de arriba y las botellas se apoyan pegadas a lo largo de la pared. Encima podés colocar botellas/frascos/vajilla. Canasto: clic derecho con fruta del tag `#qolminecraft:basket_fruit` (manzana, manzanas de oro, rodaja de melón, glow berries, sweet berries, zanahoria, zanahoria de oro, pan, pan salado, papas y variantes, carne podrida, naranja, chorus); mano vacía saca; al romper dropea fruta + canasto. Config: `features.wall_shelves`, `features.fruit_basket`. Recetas: 3 losas + 2 palos (estante); palos + trigo (canasto). En **1.20.1 / 1.21.1 / 26.1 / 26.2** (en 26.x el décor 3D usa modelos FIXED de ítem por ahora; baked en 1.20.1/1.21.1).
 
   </details>
 
@@ -461,7 +495,7 @@ Mano principal + secundaria (`F`). Clic derecho en el aire o en un bloque que no
 | Azúcar | Cuenco/vaso café / leche / chocolate | Endulza (potencia + Speed extra) |
 | Cubo/jar de leche | Cuenco/vaso de café | Café con leche |
 | Cubo/jar de leche | Chocolate caliente | Chocolatada |
-| Frasco vacío | Leche / bebida / botella / jugo / cacao | Llena el frasco (+1 porción) |
+| Frasco vacío | Leche / miel / bebida / agua / slime / jugo / cacao | Llena el frasco (+1 porción) |
 | Frasco con leche (uso) | — | Beber leche (−1 porción) |
 | Frasco con café (uso) | — | Beber café (−1 porción) |
 | Frasco lleno (Shift+uso en bloque) | — | Coloca frasco colocado |
@@ -472,7 +506,8 @@ Mano principal + secundaria (`F`). Clic derecho en el aire o en un bloque que no
 | Mano vacía sobre bidón colocado listo | — | Misma pintura |
 | Shift + mano vacía en bidón / cerca de mancha | — | Vacía el bidón (si no está sellado) o quita mancha cercana |
 | Botella / cuenco / vaso / vela (Shift+uso en superficie plana) | — | Coloca `placed_bottles` / `placed_vessel` (hasta el tope del bloque) |
-| Fruta de canasto (Shift+uso en `fruit_basket`) | — | Agrega fruta; mano vacía saca la última |
+| Fruta de canasto (uso en `fruit_basket`) | — | Agrega fruta; mano vacía saca la última |
+| Name tag (uso en botella o frasco colocado, **1.21.1**) | — | Pantalla de nombre; texto blanco al apuntar; el frasco además muestra etiqueta blanca sin letras |
 | Name tag teñido + ítem de forma (yunque) | — | `name_medal` de esa forma (1 XP) |
 | `name_medal` + `collar_ribbon` (yunque, cualquier orden) | — | `name_choker` (colores medalla + cinta) |
 | Medalla / choker / name tag (uso en mob o jugador elegible) | — | UI de nombre / solicitud de consentimiento; visual colgante si medalla/choker |

@@ -108,7 +108,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  Item `colored_water_bottle` (potion look). Drink: −½ heart and 20% random effect. Glow adds a **glint**. **Shift+right-click** places up to **32** bottles per block (vanilla + QoL). Config `features.placed_bottles_3d` (default on) uses 3D décor models; off = flat sprites.
+  Item `colored_water_bottle` (potion look). Drink: −½ heart and 20% random effect. Glow adds a **glint**. **Shift+right-click** places up to **32** bottles per block (vanilla potions/splash/lingering, honey, XP, ominous bottle on 1.21+, and QoL bottles). Inventory stack size **32** for those. Config `features.placed_bottles_3d` (default on) uses 3D décor models; off = flat sprites. The 3D ominous bottle is dark, with red dots, like the item. On **1.21.1**, a **name tag** on a placed bottle opens a name screen; the white name shows under the crosshair while you look at that bottle.
 
   </details>
 
@@ -176,7 +176,9 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  Freeze scales with level (config). **Snow block** = full; **snowballs** add up to 3 levels. Ice cream: milk + sugar + dye → flavor; **cone** (paper+sugar) scoops (cookie-like, freeze ~2 s).
+  Freeze scales with level (config). **Snow block** = full; **snowballs** add up to 3 levels. A full snow cauldron yields **6** cones (2 servings per visual level). The powder-snow bucket uses snow place/break sounds instead of the liquid bucket splash. Ice cream: milk + sugar + dye, sweetened milk + dye, or milk + colored sugar → flavor; **cone** (paper cone: 3 across the top, sugar in the middle, 1 at the tip) scoops. Each scoop adds a ball (up to 3). One ball slows you briefly. Two or three, or another ice cream while you are still cold, freezes you for a few seconds and frosts your skin. On 1.20.1 and 1.21.1 the snow block takes a soft pastel of the flavor. A single scoop is named after the food, not the dye: vanilla, orange, raspberry, crema del cielo, lemon, pistachio, cherry, tiramisu, sesame, blueberry, grape, pineapple, dulce de leche, mint, strawberry, chocolate. Milk + sugar crafts sweetened milk (bottle and jar). Sugar + dye crafts one colored sugar per dye. Dye + milk does nothing. Milk + two sugar + vanilla powder, heated in an empty cauldron, makes dulce de leche. Vanilla grows from a flower on dirt; harvest the pod and grind it into powder.
+
+  An ice cream carton (6 holes; square on a normal block, narrow on a wall shelf) holds cones, paper cups, and chocolate cups, not bottles. Colored sugar charges sprinkles into a jar (6, then 12 of the same color); eight different sugars in a bucket make multicolor sprinkles; a loose dye does not. Right-click the jar with ice cream to put them on the scoops. A container that accepts the jar’s liquid fills on right-click and does not open the pour/serve screen. Music disc **Cones & Sprinkles** (Argentina and Mexico: Conos y Chispas). A running freezer (snow + redstone) hums; leave the door open for more than 10 seconds and campfire smoke and fog spread around it. On **26.x** the snow cauldron does not take the pastel tint.
 
   </details>
 
@@ -268,6 +270,22 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
 
   </details>
 
+- **Apple juice** — Bottle drink (shapeless: apple + glass bottle); pours into jars like orange juice.
+  <details>
+  <summary>See details</summary>
+
+  Clears poison and short regeneration. Placeable as a 3D bottle (Shift). Stacks like other QoL bottles. Also produced by the **Juicer** from vanilla apples.
+
+  </details>
+
+- **Juicer** — Crafted press for orange/apple juice into bottles, cups, or jars.
+  <details>
+  <summary>See details</summary>
+
+  Craft (shapeless): hopper + crank + piston + tripwire hook → juicer. Place the juicer; put a **hopper facing down** on top with a **crank** attached; open the juicer GUI and load empty glass bottles, paper cups, or empty glass jars; put oranges or apples in the hopper; hold the crank. Each completed grind fills **one** vessel and ejects it toward the juicer’s facing (spout). Mill shortcut (orange + bottle in the hopper without using the juicer GUI) still works. Config: `features.juicer_enabled`.
+
+  </details>
+
 #### Crank (mill)
 
 - **Crank + hopper** — Hold click to grind; products go to a chest.
@@ -306,7 +324,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  Up to **4 servings**. Fill from the other hand (milk, coffee, chocolate, water, juice, cocoa…). Drinking milk clears effects. Shift+use empties. Shift+click places a jar; empty bowl serves. Config: `jars_enabled`.
+  Up to **4 servings**. Fill from the other hand (milk, honey, coffee, chocolate, water, slime, orange/apple juice, cocoa…). Empty or filled jars place in 3D (Shift+click). Drinking milk clears effects. Shift+use empties. Empty bowl serves from a placed jar. On **1.21.1**, a **name tag** on a placed jar (floor or wall shelf) opens a name screen, adds a blank white label on the jar, and shows the white name under the crosshair while you look at it. An empty name removes the label and does not spend the tag; a name spends one tag (not in creative). Picking the jar up keeps the name. Config: `jars_enabled`.
 
   </details>
 
@@ -317,6 +335,22 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <summary>See details</summary>
 
   Tags `#qolminecraft:diurnal_sleepers` / `nocturnal_sleepers`. Wake on damage, rain, or nearby player. Configurable chance and radius.
+
+  </details>
+
+- **Tame a fox** — Sweet berries or glow berries can tame an adult fox.
+  <details>
+  <summary>See details</summary>
+
+  About one try in three. It follows you; right-click sits or stands it. Chicken or rabbit (raw or cooked) stops it targeting chickens and rabbits for 5 days. Config: `features.tame_foxes`.
+
+  </details>
+
+- **Sit on stairs** — Right-click a bottom stair with an empty hand.
+  <details>
+  <summary>See details</summary>
+
+  If a fence, carpet, or slab is in front, you face that table. Sneak to stand up. A block in hand places the block instead. Config: `features.sit_on_stairs`.
 
   </details>
 
@@ -350,7 +384,7 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <details>
   <summary>See details</summary>
 
-  Shelves attach to a sturdy wall face; place bottles/jars/vessels on the top surface. Basket: Shift+right-click fruit from tag `#qolminecraft:basket_fruit`; empty hand removes; breaking drops fruit + basket. Config: `features.wall_shelves`, `features.fruit_basket`. Recipes: 3 slabs + 2 sticks (shelf); sticks + wheat (basket). Available on **1.20.1 / 1.21.1 / 26.1 / 26.2** (26.x 3D décor uses item FIXED models for now; baked models on 1.20.1/1.21.1).
+  Shelves attach to a sturdy wall face; the board sits flush with the block above, and bottles pack tight along the wall. Place bottles/jars/vessels on the top surface. Basket: right-click fruit from tag `#qolminecraft:basket_fruit` (apples, golden apples, melon slice, glow berries, sweet berries, carrot, golden carrot, bread, salted bread, potatoes and variants, rotten flesh, orange, chorus fruit); empty hand removes; breaking drops fruit + basket. Config: `features.wall_shelves`, `features.fruit_basket`. Recipes: 3 slabs + 2 sticks (shelf); sticks + wheat (basket). Available on **1.20.1 / 1.21.1 / 26.1 / 26.2** (26.x 3D décor uses item FIXED models for now; baked models on 1.20.1/1.21.1).
 
   </details>
 
@@ -461,7 +495,7 @@ Main hand + offhand (`F`). Right-click in air or on a block that does not consum
 | Sugar | Coffee / milk / chocolate bowl or cup | Sugars the drink (boost + extra Speed) |
 | Milk bucket or jar | Coffee bowl/cup | Coffee with milk |
 | Milk bucket or jar | Hot chocolate | Chocolate milk |
-| Empty glass jar | Milk / drink / bottle / juice / cocoa | Fills jar (+1 serving) |
+| Empty glass jar | Milk / honey / drink / water / slime / juice / cocoa | Fills jar (+1 serving) |
 | Jar with milk (use) | — | Drink milk (−1 serving) |
 | Jar with coffee (use) | — | Drink coffee (−1 serving) |
 | Filled jar (Shift+use on block) | — | Places placed jar |
@@ -472,7 +506,8 @@ Main hand + offhand (`F`). Right-click in air or on a block that does not consum
 | Empty hand on placed ready diffuser | — | Same paint |
 | Sneak + empty hand on diffuser / near stain | — | Empties diffuser (if not sealed) or removes nearby stain |
 | Bottle / bowl / cup / candle (Shift+use on flat surface) | — | Places `placed_bottles` / `placed_vessel` (up to stack limits) |
-| Basket fruit (Shift+use on `fruit_basket`) | — | Adds fruit; empty hand removes last |
+| Basket fruit (use on `fruit_basket`) | — | Adds fruit; empty hand removes last |
+| Name tag (use on a placed bottle or jar, **1.21.1**) | — | Name screen; white name while looking; jar also gets a blank white label |
 | Dyed name tag + shape item (anvil) | — | `name_medal` of that shape (1 XP) |
 | `name_medal` + `collar_ribbon` (anvil, either order) | — | `name_choker` (medal + ribbon colors) |
 | Medal / choker / name tag (use on eligible mob or player) | — | Rename UI / consent request; hanging visual if medal/choker |

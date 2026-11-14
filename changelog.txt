@@ -1,3 +1,15 @@
+Unreleased
+
+Ice cream flavor, sweetened milk, colored sugar, vanilla, and dulce de leche. Not a store release yet.
+
+- Sweetened milk: milk bucket + sugar (bucket returns). Pours into a bottle, a jar, and a placed bottle
+- Colored sugar: sugar + one dye, one item per dye. Dye + milk has no recipe
+- Flavor: milk + sugar + dye, sweetened milk + dye, or milk + colored sugar. Snow cauldron stores that color; the cone scoops it
+- Dulce de leche: empty cauldron over fire, a lit campfire, lava, or magma, with milk + two sugar + vanilla powder (sweetened milk counts as one sugar)
+- Vanilla flower on dirt (not sand); harvest the pod and craft it into powder
+- Flavor icons are 16×16 placeholders
+- Multi-scoop ice cream (up to 3 balls, 6 servings per full snow cauldron, food names), ice cream carton, jar sprinkles from colored sugar, Cones & Sprinkles disc, freezer hum and open-door fog, tameable fox, sit on stairs. Code on 1.20.1, 1.21.1, 26.1, and 26.2. Pastel snow tint is 1.20.1 and 1.21.1 only. On 1.20.1 the disc is a record item, not a jukebox song
+
 1.20.1-0.6.0-alpha.2 (alpha)
 
 Cauldron lid, jar pour/serve, snow preserve, dog bath, and torch/sleep polish. Store alpha for Minecraft 1.20.1 (Forge, Fabric, NeoForge).
