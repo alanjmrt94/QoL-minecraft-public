@@ -9,7 +9,7 @@
 A practical survival comfort kit for everyday Minecraft — **Forge**, **Fabric**, and **NeoForge**.
 
 **This is my third Minecraft mod.**  
-**Current version:** `1.20.1-0.7.0-beta.1` (**beta**) · Minecraft **1.20.1** · Client & dedicated server  
+**Current version:** `1.20.1-0.7.1-beta.1` (**beta**) · Minecraft **1.20.1** · Client & dedicated server  
 
 > Release notes: [changelog.txt](changelog.txt) (always in English) · earlier notes still listed: `1.20.1-0.5.2` / `1.20.1-0.4.1`  
 > Store listing: **Creative Quality Of Life** (`creative-qol`). Matrix builds cover **1.20.1**, **1.21.1**, and **26.1 / 26.2**.
@@ -30,7 +30,7 @@ Everything goes through an **in-game menu** (Mods → Config / Mod Menu, or the 
 
 Text under **See details** is optional: balance numbers, config keys, and fine rules.
 
-## Features (v0.7.0-beta)
+## Features (v0.7.1-beta)
 
 ### Water landscape dye
 
@@ -404,11 +404,11 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
 
   </details>
 
-- **Halloween ghost sheet & candy basket** — Offhand sheet costume with slow/float/jump; candy basket stays visible in hand.
+- **Halloween ghost sheet & candy basket** — Offhand sheet costume; candy basket; sweets / ToT extras on 1.21.1.
   <details>
   <summary>See details</summary>
 
-  Sheet in **offhand** only: Slowness I + Slow Falling I + Jump Boost II; jump plays a distant “boo”. Most held items are hidden/blocked while wearing the sheet — the **candy basket** is the exception. Full-body sheet layer in third person. Available on **1.20.1 / 1.21.1 / 26.1 / 26.2**. **Ghostface** (mask, knife, suspense audio) ships in the separate mod **Halloween Trick or Treat** (`halloweentot`), not here.
+  Sheet in **offhand** only: Slowness I + Slow Falling I + Jump Boost II; jump plays a distant “boo”. Most held items are hidden/blocked while wearing the sheet — the **candy basket** is the exception. Full-body sheet layer in third person. Sheet + sweets + placeable basket GUI (key **B**) + jar candy + villager treats + horror writings: **1.20.1 / 1.21.1 / 26.1 / 26.2**. **Ghostface** ships in **Halloween Trick or Treat** (`halloweentot`), not here.
 
   </details>
 

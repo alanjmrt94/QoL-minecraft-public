@@ -9,7 +9,7 @@
 Un kit práctico de comodidades de supervivencia para el día a día en Minecraft — **Forge**, **Fabric** y **NeoForge**.
 
 **Este es mi tercer mod de Minecraft.**  
-**Versión actual:** `1.20.1-0.7.0-beta.1` (**beta**) · Minecraft **1.20.1** · Cliente y servidor dedicado  
+**Versión actual:** `1.20.1-0.7.1-beta.1` (**beta**) · Minecraft **1.20.1** · Cliente y servidor dedicado  
 
 > Notas de versión: [changelog.txt](changelog.txt) (**siempre en inglés**) · notas anteriores aún listadas: `1.20.1-0.5.2` / `1.20.1-0.4.1`  
 > Listing en tiendas: **Creative Quality Of Life** (`creative-qol`). La matriz cubre **1.20.1**, **1.21.1** y **26.1 / 26.2**.
@@ -30,7 +30,7 @@ Todo pasa por un **menú in-game** (Mods → Config / Mod Menu, o la Tableta QoL
 
 Los apartados **Ver detalles** abajo son opcionales (números, claves de config y reglas finas).
 
-## Funciones (v0.7.0-beta)
+## Funciones (v0.7.1-beta)
 
 ### Tinte de agua de paisaje
 
@@ -404,11 +404,11 @@ Los apartados **Ver detalles** abajo son opcionales (números, claves de config 
 
   </details>
 
-- **Sábana fantasma y canasta de dulces** — Costume en offhand con lentitud/caída pluma/salto; la canasta sigue visible en la mano.
+- **Sábana fantasma y canasta de dulces** — Costume en offhand; canasta; dulces / ToT extras en 1.21.1.
   <details>
   <summary>Ver detalles</summary>
 
-  Sábana **solo en offhand**: Lentitud I + Slow Falling I + Jump Boost II; al saltar suena un “boo” a distancia. Con la sábana casi no se ven ni usan otros ítems — la **canasta de dulces** es la excepción. Capa a cuerpo completo en 3ª persona. En **1.20.1 / 1.21.1 / 26.1 / 26.2**. **Ghostface** (máscara, cuchillo, audio de suspenso) va en el mod aparte **Halloween Trick or Treat** (`halloweentot`), no acá.
+  Sábana **solo en offhand**: Lentitud I + Slow Falling I + Jump Boost II; al saltar suena un “boo” a distancia. Con la sábana casi no se ven ni usan otros ítems — la **canasta de dulces** es la excepción. Capa a cuerpo completo en 3ª persona. Sábana + dulces + canasta placeable con GUI (tecla **B**) + dulces en frasco + treats a aldeanos + horror writings: **1.20.1 / 1.21.1 / 26.1 / 26.2**. **Ghostface** va en **Halloween Trick or Treat** (`halloweentot`), no acá.
 
   </details>
 

@@ -1,14 +1,51 @@
 Unreleased
 
-Ice cream flavor, sweetened milk, colored sugar, vanilla, and dulce de leche. Not a store release yet.
+(nothing yet)
+
+1.20.1-0.7.1-beta.1 (beta)
+
+Distiller redesign, cooler GUI polish, Halloween basket handle, ice cream / dulce de leche, and vanilla flower item remaster. Matrix: **1.20.1 / 1.21.1 / 26.1 / 26.2** (all loaders). Includes prior 0.7.0-beta.2 notes — see below.
+
+Distiller (3D layout)
+
+- New alembic model and textures (copper / iron / wood / glass); lit vs unlit heater look
+- Footprint as a 2×2 multiblock (`distiller_satellite`) so the condenser table does not collide with players
+- Output bottles render in-world via Placeable Decor BER (not baked into the block model)
+- GUI atlas refresh: gray slot placeholders; dedicated salt-result slot (`SIZE=7`)
+- Condenser water shows a light frost overlay when coolant (snowball / ice / snow / packed / blue ice) is in the snow slot
+- Coolant already consumes 1 unit per finished batch; per-type duration balance still TBD
+
+Cooler GUI
+
+- `cooler.png` layout polish for all six modes (GRID / COMBO labels)
+- Ghost slot tint gray; horizontal double open/close uses freezer sound
+- Front/lid z-fight and door light sealing fixes (playtest still open)
+
+Halloween candy basket
+
+- Connected U-handle on item and placed models: original body sprite + opaque handle cutout; thinner crossbar; candy-colored mounts
+
+Ice cream / dulce de leche
 
 - Sweetened milk: milk bucket + sugar (bucket returns). Pours into a bottle, a jar, and a placed bottle
 - Colored sugar: sugar + one dye, one item per dye. Dye + milk has no recipe
 - Flavor: milk + sugar + dye, sweetened milk + dye, or milk + colored sugar. Snow cauldron stores that color; the cone scoops it
 - Dulce de leche: empty cauldron over fire, a lit campfire, lava, or magma, with milk + two sugar + vanilla powder (sweetened milk counts as one sugar)
 - Vanilla flower on dirt (not sand); harvest the pod and craft it into powder
+- Vanilla flower item icon remastered: shorter stem, cream bloom with pixel shading (oxeye/cornflower style)
 - Flavor icons are 16×16 placeholders
 - Multi-scoop ice cream (up to 3 balls, 6 servings per full snow cauldron, food names), ice cream carton, jar sprinkles from colored sugar, Cones & Sprinkles disc, freezer hum and open-door fog, tameable fox, sit on stairs. Code on 1.20.1, 1.21.1, 26.1, and 26.2. Pastel snow tint is 1.20.1 and 1.21.1 only. On 1.20.1 the disc is a record item, not a jukebox song
+
+1.20.1-0.7.0-beta.2 (beta)
+
+Texture remaster + Halloween candy expansion + matrix ports. Remaster, Halloween v2, and beta.1 surface polish ship on **1.20.1 / 1.21.1 / 26.1 / 26.2** (all loaders).
+
+- Remastered ship 16×16 block/item/placed/GUI textures (common assets → every MC cell)
+- Halloween v1 (ghost sheet + basic candy basket + horror writings): full matrix
+- Halloween v2: craftable sweets, placeable basket block + 256 GUI (key B), jar candy, villager kid treats, pacify/jump mixins, season debug — **ported to all cells** (Forge/Fabric/Neo where the loader exists)
+- Beta.1 polish also on all cells: chiseled disc stacking, jar label face/styles, orange up/down + stick candles, standing discs on bookshelves (`PlacedDiscRenderer`)
+- Distiller `inventoryLabelY=72` / title left; `FlatSurfaceSupport` bookshelf top placement
+- Includes prior 0.7.0-beta.1 notes — see below
 
 1.20.1-0.7.0-beta.1 (beta)
 
