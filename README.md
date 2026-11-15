@@ -9,7 +9,7 @@
 A practical survival comfort kit for everyday Minecraft — **Forge**, **Fabric**, and **NeoForge**.
 
 **This is my third Minecraft mod.**  
-**Current version:** `1.20.1-0.6.0-alpha.2` (**alpha**) · Minecraft **1.20.1** · Client & dedicated server  
+**Current version:** `1.20.1-0.7.0-beta.1` (**beta**) · Minecraft **1.20.1** · Client & dedicated server  
 
 > Release notes: [changelog.txt](changelog.txt) (always in English) · earlier notes still listed: `1.20.1-0.5.2` / `1.20.1-0.4.1`  
 > Store listing: **Creative Quality Of Life** (`creative-qol`). Matrix builds cover **1.20.1**, **1.21.1**, and **26.1 / 26.2**.
@@ -30,7 +30,7 @@ Everything goes through an **in-game menu** (Mods → Config / Mod Menu, or the 
 
 Text under **See details** is optional: balance numbers, config keys, and fine rules.
 
-## Features (v0.6.0-alpha)
+## Features (v0.7.0-beta)
 
 ### Water landscape dye
 

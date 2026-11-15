@@ -10,6 +10,17 @@ Ice cream flavor, sweetened milk, colored sugar, vanilla, and dulce de leche. No
 - Flavor icons are 16×16 placeholders
 - Multi-scoop ice cream (up to 3 balls, 6 servings per full snow cauldron, food names), ice cream carton, jar sprinkles from colored sugar, Cones & Sprinkles disc, freezer hum and open-door fog, tameable fox, sit on stairs. Code on 1.20.1, 1.21.1, 26.1, and 26.2. Pastel snow tint is 1.20.1 and 1.21.1 only. On 1.20.1 the disc is a record item, not a jukebox song
 
+1.20.1-0.7.0-beta.1 (beta)
+
+First store beta: surface decor polish and chiseled-bookshelf music discs. Matrix builds cover 1.20.1 / 1.21.1 / 26.1 / 26.2 (chiseled discs are **1.21.1 only**).
+
+- Chiseled bookshelf (1.21.1): stack up to 3 discs per slot (mixed types); spine BER from `chiseled_bookshelf_disc_spine` atlas; empty-hand click removes one (LIFO), Shift removes all
+- Place books/discs on vanilla bookshelves (top or side click); discs stand on edge in a row; flat stacks on shelves/floor
+- Jar name-tag labels: face + scribble styles (`jar_label_0..3` / top on cork)
+- Orange placed models (`orange_up` / `orange_down`); stick candle geometry
+- Distiller GUI: title left, `inventoryLabelY=72` (full GUI redesign still WIP)
+- Includes prior 0.6.0-alpha.2 feature set — see below
+
 1.20.1-0.6.0-alpha.2 (alpha)
 
 Cauldron lid, jar pour/serve, snow preserve, dog bath, and torch/sleep polish. Store alpha for Minecraft 1.20.1 (Forge, Fabric, NeoForge).
