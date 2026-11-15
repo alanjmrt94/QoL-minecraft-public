@@ -2,9 +2,9 @@ Unreleased
 
 (nothing yet)
 
-1.20.1-0.7.1-beta.1 (beta)
+1.20.1-0.7.5-beta.1 (beta)
 
-Distiller redesign, cooler GUI polish, Halloween basket handle, ice cream / dulce de leche, and vanilla flower item remaster. Matrix: **1.20.1 / 1.21.1 / 26.1 / 26.2** (all loaders). Includes prior 0.7.0-beta.2 notes — see below.
+Five beta patches (one per feat) since 0.7.0: Halloween matrix port, Distiller 2×2, Cooler GUI, chiseled/standing discs, jar/vessel wiring + vanilla flower icon. Also ice cream / dulce de leche. Matrix: **1.20.1 / 1.21.1 / 26.1 / 26.2**. Includes prior 0.7.0-beta.2 notes — see below.
 
 Distiller (3D layout)
 
