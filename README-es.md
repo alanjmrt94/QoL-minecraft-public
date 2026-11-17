@@ -9,7 +9,7 @@
 Un kit práctico de comodidades de supervivencia para el día a día en Minecraft — **Forge**, **Fabric** y **NeoForge**.
 
 **Este es mi tercer mod de Minecraft.**  
-**Versión actual:** `1.20.1-0.7.5-beta.1` (**beta**) · Minecraft **1.20.1** · Cliente y servidor dedicado  
+**Versión actual:** `1.20.1-0.7.10-beta.1` (**beta**) · Minecraft **1.20.1** · Cliente y servidor dedicado  
 
 > Notas de versión: [changelog.txt](changelog.txt) (**siempre en inglés**) · notas anteriores aún listadas: `1.20.1-0.5.2` / `1.20.1-0.4.1`  
 > Listing en tiendas: **Creative Quality Of Life** (`creative-qol`). La matriz cubre **1.20.1**, **1.21.1** y **26.1 / 26.2**.
@@ -30,7 +30,7 @@ Todo pasa por un **menú in-game** (Mods → Config / Mod Menu, o la Tableta QoL
 
 Los apartados **Ver detalles** abajo son opcionales (números, claves de config y reglas finas).
 
-## Funciones (v0.7.5-beta)
+## Funciones (v0.7.10-beta)
 
 ### Tinte de agua de paisaje
 
@@ -372,11 +372,11 @@ Los apartados **Ver detalles** abajo son opcionales (números, claves de config 
 
   </details>
 
-- **Cortinas** — Decoración de pared o techo (ondulada / lisa, 16 colores + sheer); el click cicla cerrada → semi → abierta.
+- **Cortinas** — Decoración de pared o techo (ondulada / lisa / de ondas, 16 colores + sheer); el click cicla cerrada → semi → abierta.
   <details>
   <summary>Ver detalles</summary>
 
-  Craft: 2 lana + palo (ondulada), 2 lana + hilo (lisa); sheer = lana blanca + cristal (+ hilo si lisa). Colocá en cara de pared (flush; leve separación en paneles/barras) o en el techo (cara inferior → barral + paño, hasta **3** de alto). Mismo color+estilo se combina en pares / 2×2 / columna de techo. Sin colisión. Config: `features.curtains`. En **1.20.1 / 1.21.1 / 26.1 / 26.2**.
+  Craft: 2 lana + palo (ondulada), 2 lana + hilo (lisa), 2 lana + pepita de hierro (de ondas); sheer = lana blanca + cristal (+ hilo si lisa, + pepita si de ondas). Se tiñen en caldero tintado (mismo estilo, nuevo color). Colocá en cara de pared (flush; leve separación en paneles/barras) o en el techo (cara inferior → barral/riel + paño, hasta **3** de alto). Mismo color+estilo forma paños de pared hasta **4×3** (se abren por el medio) o columna de techo. La de ondas tiene pliegues continuos + riel de aluminio y cambia textura al abrirse. Sin colisión. Config: `features.curtains`. En **1.20.1 / 1.21.1 / 26.1 / 26.2**.
 
   </details>
 
@@ -453,6 +453,15 @@ Los apartados **Ver detalles** abajo son opcionales (números, claves de config 
   <summary>Ver detalles</summary>
 
   Tableta creativa QoL. Analytics local/online (online con licencia). Samples de bloque/loot. Pestaña creativa del mod (`debug.creative_tab`, default on; reinicio al cambiar).
+
+  </details>
+
+- **Parches suaves de sonido vanilla** — Remapeos chicos en `minecraft` para que algunos eventos no queden vacíos en el log / audio.
+  <details>
+  <summary>Ver detalles</summary>
+
+  Cubo de polvo de nieve: vaciar/llenar usa place/break de nieve en vez del splash de líquido.  
+  Cuerno de cabra: vanilla registra `item.goat_horn.play` y `entity.goat.screaming.horn_break` sin entradas en `sounds.json` (los toques reales son `item.goat_horn.sound.0–7`; el break es `entity.goat.horn_break`). QoL los apunta a esos eventos para que suenen y desaparezca el WARN “Missing sound”. El tooteo normal del cuerno ya usaba `sound.0–7`.
 
   </details>
 

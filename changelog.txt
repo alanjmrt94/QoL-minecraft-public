@@ -1,6 +1,24 @@
-Unreleased
+1.20.1-0.7.10-beta.1 (beta)
 
-(nothing yet)
+Five beta patches (one feat + four fixes) since 0.7.5: WAVE curtains / 4×3 panels, matrix smoke cliffs, GhostSheet port, NeoForge 26.2 duplicate screen, WAVE loot + Forge open ranges. Also goat-horn soft stubs and chimney matrix confirmation. Matrix: **1.20.1 / 1.21.1 / 26.1 / 26.2**. Includes prior 0.7.5-beta.1 notes — see below.
+
+Curtains
+
+- WAVE style (16 colors + sheer; iron-nugget craft; openness textures + aluminum track; 16 strips with continuous z(u))
+- Wall panels up to **4×3** opening from the middle; UV vertical thirds; cauldron dye (same style, new color); wrinkled/flat preserved
+- Block loot tables + recipe copies for WAVE variants
+
+Lang / client
+
+- Mirror `item.qolminecraft.*` for every `block.*` BlockItem on 26.x (curtains + shelves/basket/lid/combos/…)
+- NeoForge 26.2: fix duplicate menu screen crash (`qolminecraft:distiller`) — client register only via `QoLNeoForgeClientMod`
+
+Matrix / ports
+
+- Smoke 10/10: chiseled 26.x (`SelectableSlotContainer` / `acceptsItemType`), fox `addTrustedEntity`, quiver crossbow `ItemStack.split`, Forge mods.toml open ranges, Forge 1.21.1 `compileOnly :common`, Mob `goalSelector` accessor
+- Halloween GhostSheet: port white sleeve + shorter shell from 1.21.1 to 1.20.1 and 26.1/26.2
+- Soft-patch vanilla goat horn empty SoundEvents onto real asset events; powder-snow bucket + goat horn remaps documented in README
+- Chimney blocks: matrix port confirmed closed on 1.20.1 / 1.21.1 / 26.1 / 26.2 (playtest + final textures still open)
 
 1.20.1-0.7.5-beta.1 (beta)
 

@@ -9,7 +9,7 @@
 A practical survival comfort kit for everyday Minecraft — **Forge**, **Fabric**, and **NeoForge**.
 
 **This is my third Minecraft mod.**  
-**Current version:** `1.20.1-0.7.5-beta.1` (**beta**) · Minecraft **1.20.1** · Client & dedicated server  
+**Current version:** `1.20.1-0.7.10-beta.1` (**beta**) · Minecraft **1.20.1** · Client & dedicated server  
 
 > Release notes: [changelog.txt](changelog.txt) (always in English) · earlier notes still listed: `1.20.1-0.5.2` / `1.20.1-0.4.1`  
 > Store listing: **Creative Quality Of Life** (`creative-qol`). Matrix builds cover **1.20.1**, **1.21.1**, and **26.1 / 26.2**.
@@ -30,7 +30,7 @@ Everything goes through an **in-game menu** (Mods → Config / Mod Menu, or the 
 
 Text under **See details** is optional: balance numbers, config keys, and fine rules.
 
-## Features (v0.7.5-beta)
+## Features (v0.7.10-beta)
 
 ### Water landscape dye
 
@@ -372,11 +372,11 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
 
   </details>
 
-- **Curtains** — Wall or ceiling décor (wrinkled / flat, 16 colors + sheer); click cycles closed → half → open.
+- **Curtains** — Wall or ceiling décor (wrinkled / flat / wave, 16 colors + sheer); click cycles closed → half → open.
   <details>
   <summary>See details</summary>
 
-  Craft: 2 wool + stick (wrinkled), 2 wool + string (flat); sheer = white wool + glass pane (+ string if flat). Place on a wall face (flush; slight gap on glass panes/iron bars) or on a ceiling underside (rod + cloth, stack up to **3**). Same color+style merge as pairs / 2×2 / ceiling column. No collision. Config: `features.curtains`. Available on **1.20.1 / 1.21.1 / 26.1 / 26.2**.
+  Craft: 2 wool + stick (wrinkled), 2 wool + string (flat), 2 wool + iron nugget (wave); sheer = white wool + glass pane (+ string if flat, + iron nugget if wave). Dye in a tinted cauldron (same style, new color). Place on a wall face (flush; slight gap on glass panes/iron bars) or on a ceiling underside (rod/track + cloth, stack up to **3**). Same color+style merge into wall panels up to **4×3** (open from the middle) or a ceiling column. Wave uses continuous folds + aluminum track and swaps texture when opening. No collision. Config: `features.curtains`. Available on **1.20.1 / 1.21.1 / 26.1 / 26.2**.
 
   </details>
 
@@ -453,6 +453,15 @@ Text under **See details** is optional: balance numbers, config keys, and fine r
   <summary>See details</summary>
 
   Creative QoL tablet. Local/online analytics (online after license). Sample block/loot. Mod creative tab (`debug.creative_tab`, default on; restart after change).
+
+  </details>
+
+- **Vanilla sound soft-patches** — Small `minecraft` sound remaps so a few vanilla events are not empty in the log / audio path.
+  <details>
+  <summary>See details</summary>
+
+  Powder-snow bucket empty/fill uses snow place/break instead of the liquid splash.  
+  Goat horn: vanilla registers `item.goat_horn.play` and `entity.goat.screaming.horn_break` without `sounds.json` entries (the real toots are `item.goat_horn.sound.0–7`; horn break is `entity.goat.horn_break`). QoL stubs those two events onto the real ones so they play and the “Missing sound” warn goes away. Normal horn tooting already used `sound.0–7`.
 
   </details>
 
